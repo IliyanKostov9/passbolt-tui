@@ -6,6 +6,7 @@ type helloApp struct{}
 
 func Hello() *helloApp {
 				return &helloApp{}
+
 }
 
 func (h *helloApp) KeyMap() tui.KeyMap {

@@ -10,15 +10,15 @@ jobs:
     name: Flake ❄️ Checker ✅
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: DeterminateSystems/nix-installer-action@ef8a148080ab6020fd15196c2084a2eea5ff2d25
-      - uses: cachix/cachix-action@5f2d7c5294214f71b873db4b969586b980625e71
+      - uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa
+      - uses: cachix/cachix-action@38b082610b782e7e93e209c35fd730d399dee866
         with:
           name: iliyankostov9-portfolio
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-      - uses: DeterminateSystems/flake-checker-action@3164002371bc90729c68af0e24d5aacf20d7c9f6
+      - uses: DeterminateSystems/flake-checker-action@786422608c7bded2bbc9741ad9f91356842bf520
 
   lock-updater:
     permissions:
@@ -28,15 +28,15 @@ jobs:
     name: Flake ❄️ Lock 🔒️ Updater ✨
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: DeterminateSystems/nix-installer-action@ef8a148080ab6020fd15196c2084a2eea5ff2d25
-      - uses: cachix/cachix-action@5f2d7c5294214f71b873db4b969586b980625e71
+      - uses: DeterminateSystems/nix-installer-action@3138316df39ed29be04236d7ffc686fa525866aa
+      - uses: cachix/cachix-action@38b082610b782e7e93e209c35fd730d399dee866
         with:
           name: iliyankostov9-portfolio
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-      - uses: DeterminateSystems/update-flake-lock@834c491b2ece4de0bbd00d85214bb5e83b4da5c6
+      - uses: DeterminateSystems/update-flake-lock@da03c0f078bc4b2c37ee4f7e072d34bf8f188bb3
         with:
           pr-title: "chore: update flake.lock"
           pr-labels: |

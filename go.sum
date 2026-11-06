@@ -1,6 +1,6 @@
-github.com/grindlemire/go-tui v0.18.2 h1:pMYnqPuAIA3w1czqFp34Jdf5s9JHdFATIytTjij1QRc=
-github.com/grindlemire/go-tui v0.18.2/go.mod h1:95oaPy6Iu6MZpiByUqxYz2Wcbckzvaw3K0jgQeI4dD0=
-github.com/passbolt/go-passbolt v0.8.1 h1:P4l6qhVUrogUMXyVvPtu8ua5AaWnI9gc0PrA1Rer3fU=
-github.com/passbolt/go-passbolt v0.8.1/go.mod h1:D9ffZzEwZCVpbw6FLxvknna1tKQC73/R49uWM2OxLNA=
-golang.org/x/sys v0.46.0 h1:noSf2Fq6F8DBgS+LysIkx7rIExoNHJsxOAtPp4rthXw=
-golang.org/x/sys v0.46.0/go.mod h1:4GL1E5IUh+htKOUEOaiffhrAeqysfVGipDYzABqnCmw=
+github.com/grindlemire/go-tui v0.24.0 h1:TlpC54N7ez/RwWNPffjZoIBLDMG0JC8P1QduP3qKYi8=
+github.com/grindlemire/go-tui v0.24.0/go.mod h1:95oaPy6Iu6MZpiByUqxYz2Wcbckzvaw3K0jgQeI4dD0=
+github.com/passbolt/go-passbolt v0.8.4 h1:xdppE+mt3GArGT38AK6uOZPcSx3m8cOsv0s+XKFTYkg=
+github.com/passbolt/go-passbolt v0.8.4/go.mod h1:Qz5d454L/OVvuPoN5dNtq+pLuQUIPYhkliofbnFSyxk=
+golang.org/x/sys v0.49.0 h1:XbzkgYJHdqh/8m2Uu0W/dQv8nktxx4BFHp1M0gROTXA=
+golang.org/x/sys v0.49.0/go.mod h1:hNLxWAXmnKAxqDtdwIYC4bM9oQPEecfsnNMuSxOs3og=

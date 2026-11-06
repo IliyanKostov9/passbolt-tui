@@ -1,5 +1,5 @@
 {
-  description = "Passbolt TUI";
+  description = "Passbolt Tui";
 
   inputs = {
     devenv-root = {
@@ -9,6 +9,10 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:cachix/devenv-nixpkgs/rolling";
     devenv.url = "github:cachix/devenv";
+    go-overlay = {
+      url = "github:purpleclay/go-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   nixConfig = {
@@ -43,7 +47,13 @@
         # };
 
         devenv.shells.default = {
-          name = "Main devenv";
+          name = "Go project";
+
+          languages.go = {
+            enable = true;
+            version = "1.26.10";
+            lsp.enable = false;
+          };
 
           # NOTE: First do devenv shell
           # git-hooks.hooks = {
@@ -61,7 +71,7 @@
             pkgs.lib.mkIf (devenvRootFileContent != "") devenvRootFileContent;
 
           packages = with pkgs; [
-            # hello
+            # none
           ];
         };
       };

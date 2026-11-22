@@ -2,13 +2,15 @@ package main
 
 import (
 	"fmt"
-	tui "github.com/grindlemire/go-tui"
 	"os"
+
+	ui "github.com/IliyanKostov9/passbolt-tui/src/ui"
+	tui "github.com/grindlemire/go-tui"
 )
 
 func main() {
 	app, err := tui.NewApp(
-		tui.WithRootComponent(Hello()),
+		tui.WithRootComponent(ui.Passbolt()),
 	)
 
 	if err != nil {

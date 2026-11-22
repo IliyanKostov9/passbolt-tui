@@ -7,21 +7,23 @@ import (
 	"github.com/joho/godotenv"
 )
 
-type Client struct {
-	Address    string
-	Password   string
-	PrivateKey string
+type client struct {
+	address    string
+	password   string
+	privateKey string
 }
 
-func NewClient() *Client {
-	if err := godotenv.Load(); err != nil {
-		slog.Error("Error loading .env file!")
+func NewClient() (*client, error) {
+	if err := godotenv.Load(".env"); err != nil {
+		slog.Warn(".env file is not found! Using the cli arguments...")
+
+		return &client{address: "", password: "", privateKey: ""}, err
 	}
 
-	return &Client{
-		Address:    os.Getenv("PASSBOLT_ADDRESS"),
-		Password:   os.Getenv("PASSBOLT_ADDRESS"),
-		PrivateKey: os.Getenv("PASSBOLT_ADDRESS"),
-	}
+	return &client{
+		address:    os.Getenv("PASSBOLT_ADDRESS"),
+		password:   os.Getenv("PASSBOLT_PASSWORD"),
+		privateKey: os.Getenv("PASSBOLT_PRIVATE_KEY"),
+	}, nil
 
 }

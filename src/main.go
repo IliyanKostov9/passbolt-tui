@@ -10,7 +10,7 @@ import (
 
 func main() {
 	app, err := tui.NewApp(
-		tui.WithRootComponent(ui.Hello()),
+		tui.WithRootComponent(ui.Passbolt()),
 	)
 
 	if err != nil {

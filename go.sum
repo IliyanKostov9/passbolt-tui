@@ -1,5 +1,7 @@
 github.com/grindlemire/go-tui v0.24.0 h1:TlpC54N7ez/RwWNPffjZoIBLDMG0JC8P1QduP3qKYi8=
 github.com/grindlemire/go-tui v0.24.0/go.mod h1:95oaPy6Iu6MZpiByUqxYz2Wcbckzvaw3K0jgQeI4dD0=
+github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
+github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
 github.com/passbolt/go-passbolt v0.8.4/go.mod h1:Qz5d454L/OVvuPoN5dNtq+pLuQUIPYhkliofbnFSyxk=
 golang.org/x/mod v0.32.0 h1:9F4d3PHLljb6x//jOyokMv3eX+YDeepZSEo3mFJy93c=
 golang.org/x/mod v0.32.0/go.mod h1:SgipZ/3h2Ci89DlEtEXWUk/HteuRin+HHhN+WbNhguU=

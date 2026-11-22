@@ -1,5 +1,4 @@
-package main
-
+package ui
 import tui "github.com/grindlemire/go-tui"
 
 type helloApp struct{}
